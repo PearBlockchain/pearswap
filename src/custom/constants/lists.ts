@@ -37,6 +37,7 @@ export const UNSUPPORTED_LIST_URLS: NetworkLists = {
   // [ChainId.ROPSTEN]: [BA_LIST],
   // [ChainId.GOERLI]: [BA_LIST],
   [ChainId.XDAI]: [BA_LIST],
+  [ChainId.CANDLE]: [BA_LIST],
 }
 
 function buildNetworkDefaultLists({ networkLists, chainId }: { chainId: ChainId; networkLists: string[] }) {
@@ -85,6 +86,10 @@ export const DEFAULT_LIST_OF_LISTS_BY_NETWORK: NetworkLists = {
     chainId: ChainId.XDAI,
     networkLists: [COW_DAO_LIST, HONEY_SWAP_XDAI],
   }),
+  [ChainId.CANDLE]: buildNetworkDefaultLists({
+    chainId: ChainId.CANDLE,
+    networkLists: [COW_DAO_LIST, HONEY_SWAP_XDAI],
+  }),
 }
 
 // default lists to be 'active' aka searched across
@@ -95,6 +100,7 @@ export const DEFAULT_ACTIVE_LIST_URLS_BY_NETWORK: NetworkLists = {
   // [ChainId.ROPSTEN]: [GEMINI_LIST],
   [ChainId.XDAI]: [COW_DAO_LIST, HONEY_SWAP_XDAI],
   // [ChainId.GOERLI]: [GEMINI_LIST],
+  [ChainId.CANDLE]: [COW_DAO_LIST, HONEY_SWAP_XDAI],
 }
 
 // Set what we want as the default list when no chain id available: default = MAINNET
