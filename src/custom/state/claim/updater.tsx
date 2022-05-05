@@ -49,9 +49,6 @@ export default function Updater() {
     })
   }, [activeClaimAccount, gAvailable, gClaimed, gExpired, gTotal, setClaimsCount])
 
-  return null
-}
-
 
 // --- CANDLE ---
 const candleClaims = useClassifiedUserClaims(activeClaimAccount, SupportedChainId.CANDLE)
