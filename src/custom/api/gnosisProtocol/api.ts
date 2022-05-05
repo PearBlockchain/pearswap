@@ -39,6 +39,7 @@ function getGnosisProtocolUrl(): Partial<Record<ChainId, string>> {
       [ChainId.MAINNET]: process.env.REACT_APP_API_URL_STAGING_MAINNET || 'https://barn.api.cow.fi/mainnet/api',
       [ChainId.RINKEBY]: process.env.REACT_APP_API_URL_STAGING_RINKEBY || 'https://barn.api.cow.fi/rinkeby/api',
       [ChainId.XDAI]: process.env.REACT_APP_API_URL_STAGING_XDAI || 'https://barn.api.cow.fi/xdai/api',
+      [ChainId.CANDLE]: process.env.REACT_APP_API_URL_STAGING_CANDLE || 'https://barn.api.cow.fi/candle/api',
     }
   }
 
