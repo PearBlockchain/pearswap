@@ -49,14 +49,12 @@ export const GP_SETTLEMENT_CONTRACT_ADDRESS: Partial<Record<number, string>> = {
   [ChainId.MAINNET]: GPv2Settlement[ChainId.MAINNET].address,
   [ChainId.RINKEBY]: GPv2Settlement[ChainId.RINKEBY].address,
   [ChainId.XDAI]: GPv2Settlement[ChainId.XDAI].address,
-  [ChainId.CANDLE]: GPv2Settlement[ChainId.CANDLE].address,
 }
 
 export const GP_VAULT_RELAYER: Partial<Record<number, string>> = {
   [ChainId.MAINNET]: GPv2VaultRelayer[ChainId.MAINNET].address,
   [ChainId.RINKEBY]: GPv2VaultRelayer[ChainId.RINKEBY].address,
   [ChainId.XDAI]: GPv2VaultRelayer[ChainId.XDAI].address,
-  [ChainId.CANDLE]: GPv2VaultRelayer[ChainId.CANDLE].address,
 }
 
 export const V_COW_CONTRACT_ADDRESS: Record<number, string> = {
