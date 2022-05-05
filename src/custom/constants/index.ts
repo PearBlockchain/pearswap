@@ -49,24 +49,28 @@ export const GP_SETTLEMENT_CONTRACT_ADDRESS: Partial<Record<number, string>> = {
   [ChainId.MAINNET]: GPv2Settlement[ChainId.MAINNET].address,
   [ChainId.RINKEBY]: GPv2Settlement[ChainId.RINKEBY].address,
   [ChainId.XDAI]: GPv2Settlement[ChainId.XDAI].address,
+  [ChainId.CANDLE]: GPv2Settlement[ChainId.CANDLE].address,
 }
 
 export const GP_VAULT_RELAYER: Partial<Record<number, string>> = {
   [ChainId.MAINNET]: GPv2VaultRelayer[ChainId.MAINNET].address,
   [ChainId.RINKEBY]: GPv2VaultRelayer[ChainId.RINKEBY].address,
   [ChainId.XDAI]: GPv2VaultRelayer[ChainId.XDAI].address,
+  [ChainId.CANDLE]: GPv2VaultRelayer[ChainId.CANDLE].address,
 }
 
 export const V_COW_CONTRACT_ADDRESS: Record<number, string> = {
   [ChainId.MAINNET]: '0xd057b63f5e69cf1b929b356b579cba08d7688048',
   [ChainId.XDAI]: '0xc20C9C13E853fc64d054b73fF21d3636B2d97eaB',
   [ChainId.RINKEBY]: '0x9386177e95A853070076Df2403b9D547D653126D',
+  [ChainId.CANDLE]: '0xc20C9C13E853fc64d054b73fF21d3636B2d97eaB',
 }
 
 export const COW_CONTRACT_ADDRESS: Record<number, string> = {
   [ChainId.MAINNET]: '0xDEf1CA1fb7FBcDC777520aa7f396b4E015F497aB',
   [ChainId.XDAI]: '0x177127622c4A00F3d409B75571e12cB3c8973d3c',
   [ChainId.RINKEBY]: '0xbdf1e19f8c78A77fb741b44EbA5e4c0C8DBAeF91',
+  [ChainId.CANDLE]: '0x177127622c4A00F3d409B75571e12cB3c8973d3c',
 }
 
 // See https://github.com/gnosis/gp-v2-contracts/commit/821b5a8da213297b0f7f1d8b17c893c5627020af#diff-12bbbe13cd5cf42d639e34a39d8795021ba40d3ee1e1a8282df652eb161a11d6R13
@@ -78,6 +82,7 @@ export const NATIVE_CURRENCY_BUY_TOKEN: { [chainId in ChainId | number]: Token }
   // [ChainId.GOERLI]: new Token(ChainId.GOERLI, NATIVE_CURRENCY_BUY_ADDRESS, 18, 'ETH', 'Ether'),
   // [ChainId.KOVAN]: new Token(ChainId.KOVAN, NATIVE_CURRENCY_BUY_ADDRESS, 18, 'ETH', 'Ether'),
   [ChainId.XDAI]: new Token(ChainId.XDAI, NATIVE_CURRENCY_BUY_ADDRESS, 18, 'xDAI', 'xDAI'),
+  [ChainId.CANDLE]: new Token(ChainId.CANDLE, NATIVE_CURRENCY_BUY_ADDRESS, 18, 'CNDL', 'Candle'),
 }
 
 export const ORDER_ID_SHORT_LENGTH = 8
@@ -94,12 +99,12 @@ export const WETH_LOGO_URI =
 export const XDAI_LOGO_URI =
   'https://raw.githubusercontent.com/1Hive/default-token-list/master/src/assets/xdai/0xe91d153e0b41518a2ce8dd3d7944fa863463a97d/logo.png'
 
-export const DOCS_LINK = 'https://docs.cow.fi'
+export const DOCS_LINK = 'https://docs.candlelabs.org'
 export const CONTRACTS_CODE_LINK = 'https://github.com/gnosis/gp-v2-contracts'
 export const CODE_LINK = 'https://github.com/cowprotocol/cowswap'
 export const DISCORD_LINK = 'https://discord.com/invite/cowprotocol'
 export const DUNE_DASHBOARD_LINK = 'https://duneanalytics.com/gnosis.protocol/Gnosis-Protocol-V2'
-export const TWITTER_LINK = 'https://twitter.com/mevprotection'
+export const TWITTER_LINK = 'https://twitter.com/peardefi'
 export const GPAUDIT_LINK = 'https://github.com/gnosis/gp-v2-contracts/blob/main/audits/GnosisProtocolV2May2021.pdf'
 export const FLASHBOYS_LINK = 'https://arxiv.org/abs/1904.05234'
 export const COWWIKI_LINK = 'https://en.wikipedia.org/wiki/Coincidence_of_wants'
@@ -120,6 +125,7 @@ export const GAS_FEE_ENDPOINTS = {
   // no kovan = main
   // [ChainId.KOVAN]: 'https://safe-relay.kovan.gnosis.io/api/v1/gas-station/',
   [ChainId.XDAI]: 'https://blockscout.com/xdai/mainnet/api/v1/gas-price-oracle',
+  [ChainId.CANDLE]: 'https://blockscout.com/xdai/mainnet/api/v1/gas-price-oracle',
 }
 
 export const UNSUPPORTED_TOKENS_FAQ_URL = '/faq/trading#what-token-pairs-does-cowswap-allow-to-trade'
