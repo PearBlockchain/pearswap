@@ -14,7 +14,7 @@ const indexFiles = {
   [SupportedChainId.MAINNET]: mainnetIndex,
   [SupportedChainId.RINKEBY]: rinkebyIndex,
   [SupportedChainId.XDAI]: gnosisChainIndex,
-  [SupportedChainId.CANDLE]: 'candleIndex',
+  [SupportedChainId.CANDLE]: candleIndex,
 }
 
 const chainNames = {
