@@ -21,13 +21,14 @@ export enum SupportedChainId {
 
   POLYGON = 137,
   POLYGON_MUMBAI = 80001, */
-
+  XDAI = 100,
   CANDLE = 534,
 }
 
 export const CHAIN_IDS_TO_NAMES = {
   ...UNI_CHAIN_IDS_TO_NAMES,
   [SupportedChainId.CANDLE]: 'candle',
+  [SupportedChainId.XDAI]: 'gnosis-chain',
   /* [SupportedChainId.MAINNET]: 'mainnet',
   [SupportedChainId.ROPSTEN]: 'ropsten',
   [SupportedChainId.RINKEBY]: 'rinkeby',
@@ -62,6 +63,7 @@ export const L1_CHAIN_IDS = [
   SupportedChainId.POLYGON,
   SupportedChainId.POLYGON_MUMBAI, */
   SupportedChainId.CANDLE,
+  SupportedChainId.XDAI,
 ] as const
 
 export type SupportedL1ChainId = typeof L1_CHAIN_IDS[number]
