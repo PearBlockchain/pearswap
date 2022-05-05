@@ -186,4 +186,14 @@ export const CHAIN_INFO: ChainInfoMap = {
     logoUrl: GnosisChainLogo,
     nativeCurrency: { name: 'Candle', symbol: 'CNDL', decimals: 18 },
   },
+  [SupportedChainId.XDAI]: {
+    networkType: NetworkType.L1,
+    docs: 'https://docs.candlelabs.org/',
+    bridge: 'https://omni.gnosischain.com/bridge',
+    explorer: 'https://explorer.cndlchain.com',
+    infoLink: 'https://www.candlelabs.org/',
+    label: 'XDAI',
+    logoUrl: GnosisChainLogo,
+    nativeCurrency: { name: 'XDai', symbol: 'XDai', decimals: 18 },
+  },
 }
