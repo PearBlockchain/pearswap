@@ -36,8 +36,8 @@ function _getCoinGeckoAssetPlatform(chainId: ChainId) {
     // https://api.coingecko.com/api/v3/asset_platforms
     case ChainId.MAINNET:
       return 'ethereum'
-    case ChainId.XDAI:
-      return 'xdai'
+    case ChainId.CANDLE:
+      return 'candle'
     default:
       return null
   }
