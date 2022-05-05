@@ -115,7 +115,7 @@ const GNO_MAINNET = new Token(
   'Gnosis'
 )
 const GNO_XDAI = new Token(SupportedChainId.XDAI, '0x9c58bacc331c9aa871afd802db6379a98e80cedb', 18, 'GNO', 'Gnosis')
-const GNO_CNDLE = new Token(SupportedChainId.CANDLE, '0x9c58bacc331c9aa871afd802db6379a98e80cedb', 18, 'GNO', 'Gnosis')
+const GNO_CANDLE = new Token(SupportedChainId.CANDLE, '0x9c58bacc331c9aa871afd802db6379a98e80cedb', 18, 'GNO', 'Gnosis')
 const GNO_RINKEBY = new Token(
   SupportedChainId.RINKEBY,
   '0xd0dab4e640d95e9e8a47545598c33e31bdb53c7c',
