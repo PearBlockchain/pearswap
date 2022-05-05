@@ -52,6 +52,27 @@ export default function Updater() {
   return null
 }
 
+
+// --- CANDLE ---
+const candleClaims = useClassifiedUserClaims(activeClaimAccount, SupportedChainId.CANDLE)
+const {
+  total: cTotal,
+  expired: cExpired,
+  claimed: cClaimed,
+  available: cAvailable,
+} = useMemo(() => _countClaims(cChainClaims, chainId, SupportedChainId.XDAI), [chainId, cChainClaims])
+
+useEffect(() => {
+  if (!activeClaimAccount) return
+  setClaimsCount({
+    chain: SupportedChainId.XDAI,
+    claimInfo: { total: cTotal, expired: cExpired, claimed: cClaimed, available: cAvailable },
+    account: activeClaimAccount,
+  })
+}, [activeClaimAccount, cAvailable, cClaimed, cExpired, cTotal, setClaimsCount])
+
+return null
+}
 /**
  * Counts claims per network
  */
