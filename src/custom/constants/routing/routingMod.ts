@@ -162,7 +162,6 @@ export const COMMON_BASES: ChainCurrencyList = {
   ], // mod
   [SupportedChainId.CANDLE]: [
     // nativeOnChain(SupportedChainId.XDAI),
-    USDC_CANDLE,
     COW[SupportedChainId.CANDLE],
     WRAPPED_NATIVE_CURRENCY[SupportedChainId.CANDLE],
   ], // mod
