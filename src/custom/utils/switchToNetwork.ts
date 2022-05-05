@@ -30,8 +30,8 @@ export function getRpcUrls(chainId: SupportedChainId): [string] {
       return ['https://polygon-rpc.com/']
     case SupportedChainId.POLYGON_MUMBAI:
       return ['https://rpc-endpoints.superfluid.dev/mumbai']*/
-    case SupportedChainId.XDAI:
-      return ['https://rpc.gnosischain.com/']
+    case SupportedChainId.CANDLE:
+      return ['https://network.cndlchain.com/']
     default:
   }
   // Our API-keyed URLs will fail security checks when used with external wallets.
