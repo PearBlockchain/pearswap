@@ -351,7 +351,7 @@ export default function WalletModal({
               <h5>
                 <Trans>
                   App/wallet network mismatch. Please connect to a supported network in your wallet: Ethereum Mainnet or
-                  Gnosis Chain.
+                  Candle.
                 </Trans>
               </h5>
             ) : (

@@ -36,7 +36,7 @@ export default function Updater(): null {
     }
   }, [dispatch, chainId, library, windowVisible])
 
-  const debouncedChainId = useDebounce(activeChainId, 100)
+  const debouncedChainId = useDebounce(activeChainId, 534)
 
   useEffect(() => {
     const chainId = debouncedChainId ? supportedChainId(debouncedChainId) ?? null : null

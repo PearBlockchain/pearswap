@@ -176,14 +176,14 @@ export const CHAIN_INFO: ChainInfoMap = {
     logoUrl: polygonMaticLogo,
     nativeCurrency: { name: 'Polygon Mumbai Matic', symbol: 'mMATIC', decimals: 18 },
   },*/
-  [SupportedChainId.XDAI]: {
+  [SupportedChainId.CANDLE]: {
     networkType: NetworkType.L1,
-    docs: 'https://docs.gnosischain.com/',
+    docs: 'https://docs.candlelabs.org/',
     bridge: 'https://omni.gnosischain.com/bridge',
-    explorer: 'https://blockscout.com/xdai/mainnet/',
-    infoLink: 'https://www.xdaichain.com/',
-    label: 'Gnosis Chain',
+    explorer: 'https://explorer.cndlchain.com',
+    infoLink: 'https://www.candlelabs.org/',
+    label: 'Candle',
     logoUrl: GnosisChainLogo,
-    nativeCurrency: { name: 'xDai', symbol: 'XDAI', decimals: 18 },
+    nativeCurrency: { name: 'Candle', symbol: 'CNDL', decimals: 18 },
   },
 }

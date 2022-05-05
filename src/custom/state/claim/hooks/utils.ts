@@ -96,8 +96,8 @@ function _repoNetworkIdMapping(id: SupportedChainId): string {
       return 'mainnet'
     case SupportedChainId.RINKEBY:
       return 'rinkeby'
-    case SupportedChainId.XDAI:
-      return 'gnosis-chain'
+    case SupportedChainId.CANDLE:
+      return 'candle'
     default:
       throw new Error('Network not supported')
   }

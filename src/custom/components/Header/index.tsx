@@ -50,11 +50,11 @@ export const NETWORK_LABELS: { [chainId in ChainId]?: string } = {
   // [ChainId.ROPSTEN]: 'Ropsten',
   // [ChainId.GOERLI]: 'Görli',
   // [ChainId.KOVAN]: 'Kovan',
-  [ChainId.XDAI]: 'Gnosis Chain',
+  [ChainId.CANDLE]: 'Candle',
 }
 
 const CHAIN_CURRENCY_LABELS: { [chainId in ChainId]?: string } = {
-  [ChainId.XDAI]: 'xDAI',
+  [ChainId.CANDLE]: 'Candle',
 }
 
 export interface LinkType {
