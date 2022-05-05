@@ -160,6 +160,12 @@ export const COMMON_BASES: ChainCurrencyList = {
     WETH_XDAI,
     WRAPPED_NATIVE_CURRENCY[SupportedChainId.XDAI],
   ], // mod
+  [SupportedChainId.CANDLE]: [
+    // nativeOnChain(SupportedChainId.XDAI),
+    USDC_CANDLE,
+    COW[SupportedChainId.CANDLE],
+    WRAPPED_NATIVE_CURRENCY[SupportedChainId.CANDLE],
+  ], // mod
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
