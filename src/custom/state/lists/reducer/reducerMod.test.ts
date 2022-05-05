@@ -44,11 +44,6 @@ const EMPTY_STORE = {
     activeListUrls: undefined,
     gpUnsupportedTokens: {},
   },
-  [ChainId.CANDLE]: {
-    byUrl: {},
-    activeListUrls: undefined,
-    gpUnsupportedTokens: {},
-  },
 }
 
 describe('list reducer', () => {
