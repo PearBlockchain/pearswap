@@ -155,6 +155,17 @@ export const CHAIN_INFO: ChainInfoMap = {
     logoUrl: polygonMaticLogo,
     nativeCurrency: { name: 'Polygon Matic', symbol: 'MATIC', decimals: 18 },
   },
+  [SupportedChainId.CANDLE]: {
+    networkType: NetworkType.L1,
+    blockWaitMsBeforeWarning: ms`10m`,
+    bridge: 'https://wallet.polygon.technology/bridge',
+    docs: 'https://candlelabs.org/',
+    explorer: 'https://explorer.cndlchain.com/',
+    infoLink: 'https://info.uniswap.org/#/polygon/',
+    label: 'Candle',
+    logoUrl: polygonMaticLogo,
+    nativeCurrency: { name: 'Candle', symbol: 'CNDL', decimals: 18 },
+  },
   [SupportedChainId.POLYGON_MUMBAI]: {
     networkType: NetworkType.L1,
     blockWaitMsBeforeWarning: ms`10m`,

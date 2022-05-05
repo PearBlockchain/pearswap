@@ -3,6 +3,7 @@
  */
 export enum SupportedChainId {
   MAINNET = 1,
+  CANDLE = 534,
   ROPSTEN = 3,
   RINKEBY = 4,
   GOERLI = 5,
@@ -20,6 +21,7 @@ export enum SupportedChainId {
 
 export const CHAIN_IDS_TO_NAMES = {
   [SupportedChainId.MAINNET]: 'mainnet',
+  [SupportedChainId.CANDLE]: 'candle',
   [SupportedChainId.ROPSTEN]: 'ropsten',
   [SupportedChainId.RINKEBY]: 'rinkeby',
   [SupportedChainId.GOERLI]: 'goerli',
@@ -46,6 +48,7 @@ export const SUPPORTED_GAS_ESTIMATE_CHAIN_IDS = [SupportedChainId.MAINNET, Suppo
  */
 export const L1_CHAIN_IDS = [
   SupportedChainId.MAINNET,
+  SupportedChainId.CANDLE,
   SupportedChainId.ROPSTEN,
   SupportedChainId.RINKEBY,
   SupportedChainId.GOERLI,
