@@ -30,7 +30,7 @@ import { TokenAddressMap, combineMaps } from '@src/state/lists/hooks'
 
 type Mutable<T> = {
   -readonly [P in keyof T]: Mutable<T[P]>
-} 
+}
 */
 
 /**
@@ -40,6 +40,7 @@ export const EMPTY_LIST: TokenAddressMap = {
   [ChainId.RINKEBY]: {},
   [ChainId.MAINNET]: {},
   [ChainId.XDAI]: {},
+  [ChainId.CANDLE]: {},
 }
 
 const listCache: WeakMap<TokenList, TokenAddressMap> | null =
@@ -65,7 +66,7 @@ export function listToTokenMap(list: TokenList): TokenAddressMap {
   }, {}) as TokenAddressMap
     listCache?.set(list, map)
     return map
-  } 
+  }
 */
 
   const map = list.tokens.reduce<TokenAddressMap>((tokenMap, tokenInfo) => {
