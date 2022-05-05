@@ -57,12 +57,12 @@ const {
   expired: cExpired,
   claimed: cClaimed,
   available: cAvailable,
-} = useMemo(() => _countClaims(cChainClaims, chainId, SupportedChainId.XDAI), [chainId, cChainClaims])
+} = useMemo(() => _countClaims(cChainClaims, chainId, SupportedChainId.CANDLE), [chainId, cChainClaims])
 
 useEffect(() => {
   if (!activeClaimAccount) return
   setClaimsCount({
-    chain: SupportedChainId.XDAI,
+    chain: SupportedChainId.CANDLE,
     claimInfo: { total: cTotal, expired: cExpired, claimed: cClaimed, available: cAvailable },
     account: activeClaimAccount,
   })
